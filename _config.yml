@@ -1,6 +1,6 @@
 title:             "Gabriel Jones"
 description:       "Gabriel Jones"
-baseurl:           "https://gabrieljonesdev.github.io/GJUWD/"
+baseurl:           "/GJUWD/"
 
 # Header data
 header_parent_title: GJDEV
