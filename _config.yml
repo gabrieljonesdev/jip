@@ -1,12 +1,10 @@
-title:             "Italia Design Jekyll Theme - by G.Gentili 2018"
-description:       "A theme for Jekyll or GitHub Pages derived from Clean Blog by Start Bootstrap"
-baseurl:           "/"
-url:               "https://ggentili.github.io/Italia-Design-Jekyll-Theme/"
-author:            "Redazione"
+title:             "Gabriel Jones"
+description:       "Gabriel Jones"
+baseurl:           "https://gabrieljones.gjdev.it"
 
 # Header data
 header_parent_title: GJDEV
-header_parent_url: "http://entepubblico-sovraordinato.it"
+header_parent_url: "https://gjdev.it"
 header_language_selector: false
 header_logo: https://gjd.altervista.org/wp-content/uploads/2024/09/cropped-Black_Beige_Circle_Y2K_Illustrative_Class_Logo-removebg-preview.png
 header_title: Gabriel Jones
@@ -17,7 +15,7 @@ mega_menu: true    # if true, require _data/menu.yml
 mega_menu_accedi: false
 
 # Social profiles
-social_block: true
+social_block: false
 social_username: "&commat;Account"    # short
 medium_username: abcuser
 facebook_username: abcuser
