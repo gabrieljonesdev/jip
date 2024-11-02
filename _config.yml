@@ -1,6 +1,6 @@
 title:             "Gabriel Jones"
 description:       "Gabriel Jones"
-baseurl:           "/"
+baseurl:           "https://gabrieljonesdev.github.io/GJUWD/"
 
 # Header data
 header_parent_title: GJDEV
@@ -33,7 +33,7 @@ posts_list_title: Autem reiciendis post
 section_lists: true
 section_lists_title: Dignissimos recusandae landing
 twitter_list: true
-twitter_list_title: Twitter@amministrazione
+twitter_list_title: Twitter@gabrieljonesdev
 links_leads: true
 links_leads_title: A est rerum leads
 
@@ -61,11 +61,11 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
-      comments: false
+      comments: true
       share: true
-      related: false
+      related: true
   # _foo
   - scope:
       path: ""
