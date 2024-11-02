@@ -5,12 +5,12 @@ url:               "https://ggentili.github.io/Italia-Design-Jekyll-Theme/"
 author:            "Redazione"
 
 # Header data
-header_parent_title: Nome ente sovraordinato
+header_parent_title: GJDEV
 header_parent_url: "http://entepubblico-sovraordinato.it"
 header_language_selector: false
 header_logo: https://placehold.it/75x80?text=header_logo
-header_title: Nome ente o titolo del sito
-header_subtitle: sottotitolo
+header_title: Gabriel Jones
+header_subtitle: Reparto 18F, URP, RS, RC, un mondo a parte!
 search: true
 search_full_content: false
 mega_menu: true    # if true, require _data/menu.yml
