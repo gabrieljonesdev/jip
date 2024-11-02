@@ -6,7 +6,6 @@ layout: default
 
     {{ content }}
 
-
     {% if site.links_buttons %}
     <!-- from _data/links_buttons.yml -->
     <div class="u-layout-wide u-layoutCenter u-padding-r-bottom u-margin-r-bottom u-layout-r-withGutter">
@@ -48,7 +47,7 @@ layout: default
 
                     <div class="Grid Grid--withGutter">
 
-                    {% for post in site.posts limit : 6 %}
+                    {% for post in site.posts limit: 6 %}
                       {% if forloop.first %}
                         <div class="Grid-cell u-nbfc u-md-size3of4 u-lg-size3of4">
 
@@ -90,8 +89,9 @@ layout: default
                     </div>
 
                     <p class="u-textCenter u-text-md-right u-text-lg-right u-padding-r-top">
-                        <a href="{{"/posts" | relative_url }}" class="u-color-50 u-textClean u-text-h4">
-          tutti i contenuti <span class="Icon Icon-chevron-right"></a>
+                        <a href="{{ "/posts" | relative_url }}" class="u-color-50 u-textClean u-text-h4">
+                            tutti i contenuti <span class="Icon Icon-chevron-right"></span>
+                        </a>
                     </p>
 
                 </section>
@@ -101,133 +101,51 @@ layout: default
     </div>
     {% endif %}
 
-
     {% if site.section_lists %}
     <!-- "landing section" from _data/section_lists.yml -->
     <section class="u-layout-wide u-layout-withGutter u-layoutCenter u-padding-r-top">
-        <h1 class="u-text-h2">{{ site.section_lists_title }}</h1>
+        <h1 class="u-text-h2">Aree Tematiche</h1>
         <div class="Grid Grid--withGutter">
 
             <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
                 <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Area tematica</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">
-                        Dolorem et cupiditate quasi aut ducimus voluptas officiis. Aut quisquam libero totam voluptatibus deserunt enim et voluptatem. Dolor tenetur qui perspiciatis est.
-                        <ul class="Linklist Prose u-text-r-xs">
-                            <li><a href="">autem reiciendis maiores</a></li>
-                            <li><a href="">blanditiis soluta exercitationem</a></li>
-                            <li><a href="">voluptatem eligendi laboriosam</a></li>
-                            <li><a href="">laboriosam porro dolor</a></li>
-                        </ul>
-                    </p>
+                    <h2 class="u-text-h3 u-padding-r-top">Progetti</h2>
+                    <p class="Prose u-padding-r-top u-padding-r-bottom">Tutti i progetti da Gabby</p>
+                    <ul class="Linklist Prose u-text-r-xs">
+                        <li><a href="/progetti/accessibilità">Progetto accessibilità 20 50</a></li>
+                        <li><a href="/progetti/ava">AVA project</a></li>
+                        <li><a href="/progetti/pgf/">Progetto politiche giovanili a Fontanafredda</a></li>
+                    </ul>
                 </div>
             </div>
 
             <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
                 <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Area tematica</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">
-                        Dignissimos recusandae et numquam sint qui saepe qui. Est blanditiis quibusdam voluptas alias enim. Quia sed odit voluptatem error iusto ex.
-                        <ul class="Linklist Prose u-text-r-xs">
-                            <li><a href="">autem reiciendis maiores</a></li>
-                            <li><a href="">blanditiis soluta exercitationem</a></li>
-                            <li><a href="">voluptatem eligendi laboriosam</a></li>
-                            <li><a href="">laboriosam porro dolor</a></li>
-                        </ul>
-                    </p>
+                    <h2 class="u-text-h3 u-padding-r-top">Social</h2>
+                    <p class="Prose u-padding-r-top u-padding-r-bottom">Tutti i social di Gabriel Jones</p>
+                    <ul class="Linklist Prose u-text-r-xs">
+                        <li><a href="https://instagram.com/onlygabbyme">Instagram</a></li>
+                        <li><a href="https://www.snapchat.com/add/gabriel_jones4">Snapchat</a></li>
+                        <li><a href="https://www.x.com/">x</a></li>
+                        <li><a href="https://www.github.com/gabrieljonesdev">github</a></li>
+                    </ul>
                 </div>
             </div>
 
             <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
                 <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Area tematica</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">
-                        Ducimus itaque veniam minima aut. Quam itaque a. Corrupti doloribus aperiam sed voluptas quas expedita earum harum hic.
-                        <ul class="Linklist Prose u-text-r-xs">
-                            <li><a href="">autem reiciendis maiores</a></li>
-                            <li><a href="">blanditiis soluta exercitationem</a></li>
-                            <li><a href="">voluptatem eligendi laboriosam</a></li>
-                            <li><a href="">laboriosam porro dolor</a></li>
-                        </ul>
-                    </p>
+                    <h2 class="u-text-h3 u-padding-r-top">Pagine</h2>
+                    <p class="Prose u-padding-r-top u-padding-r-bottom">Pagine di Gabriel!</p>
+                    <ul class="Linklist Prose u-text-r-xs">
+                        <li><a href="/post/">il blog</a></li>
+                        <li><a href="/curriculum/">Curriculum</a></li>
+                        <li><a href="/reparti/">Reparti</a></li>
+                        <li><a href="/onlygabbyme/">onlygabbyme</a></li>
+                        <li><a href="/documenti/">Documenti</a></li>
+                        <li><a href="/contatti/">contatti</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
-                <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Area tematica</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">
-                        Quo autem quam aut eligendi blanditiis id. In aut accusamus. Nesciunt earum ut suscipit aperiam. Aut magni consequuntur quod itaque et id ad. Rerum at laboriosam id perspiciatis iste molestiae vitae. Aperiam aut eveniet ipsum vitae.
-                        <ul class="Linklist Prose u-text-r-xs">
-                            <li><a href="">autem reiciendis maiores</a></li>
-                            <li><a href="">blanditiis soluta exercitationem</a></li>
-                            <li><a href="">voluptatem eligendi laboriosam</a></li>
-                            <li><a href="">laboriosam porro dolor</a></li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
-                <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Area tematica</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">
-                        Praesentium deserunt dolorem at doloremque eos. Ratione voluptatem earum deserunt neque aliquid est. Voluptatum molestiae et fuga nihil quia non.
-                        <ul class="Linklist Prose u-text-r-xs">
-                            <li><a href="">autem reiciendis maiores</a></li>
-                            <li><a href="">blanditiis soluta exercitationem</a></li>
-                            <li><a href="">voluptatem eligendi laboriosam</a></li>
-                            <li><a href="">laboriosam porro dolor</a></li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
-                <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Area tematica</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">
-                        Necessitatibus numquam quia deleniti tempora non quos impedit sed. Enim tenetur voluptate maiores voluptatibus. Esse ea est rerum asperiores. Eum deleniti quasi voluptatum sit possimus dolores odit. Aut voluptatum consequuntur.
-                        <ul class="Linklist Prose u-text-r-xs">
-                            <li><a href="">autem reiciendis maiores</a></li>
-                            <li><a href="">blanditiis soluta exercitationem</a></li>
-                            <li><a href="">voluptatem eligendi laboriosam</a></li>
-                            <li><a href="">laboriosam porro dolor</a></li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
-                <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Area tematica</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">
-                        Iste in quod voluptas quos qui voluptas. Sint ut occaecati culpa possimus dolorum et doloribus eos. Magni dolore aut quis. Maiores et illo rem.
-                        <ul class="Linklist Prose u-text-r-xs">
-                            <li><a href="">autem reiciendis maiores</a></li>
-                            <li><a href="">blanditiis soluta exercitationem</a></li>
-                            <li><a href="">voluptatem eligendi laboriosam</a></li>
-                            <li><a href="">laboriosam porro dolor</a></li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
-                <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Area tematica</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">
-                        Et officia quo adipisci dignissimos minus cum veritatis eos et. A iste aspernatur repellendus sed cumque eligendi odio. Accusantium nisi voluptatem et cum eligendi sint.
-                        <ul class="Linklist Prose u-text-r-xs">
-                            <li><a href="">autem reiciendis maiores</a></li>
-                            <li><a href="">blanditiis soluta exercitationem</a></li>
-                            <li><a href="">voluptatem eligendi laboriosam</a></li>
-                            <li><a href="">laboriosam porro dolor</a></li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
         </div>
     </section>
     {% endif %}
@@ -239,7 +157,7 @@ layout: default
             <section class="u-layout-medium">
                 <div class="Grid">
                     <div class="Grid-cell u-layout-centerLeft">
-                        <h2 class="u-text-r-l"><a class="u-color-white" href="">{{ site.twitter_list_title }}</a></h2>
+                        <h2 class="u-text-r-l"><a class="u-color-white" href="">Da Gabriel</a></h2>
                     </div>
                 </div>
                 <div class="u-text-r-xxl u-padding-r-top">
@@ -250,90 +168,16 @@ layout: default
                                 <section class="u-text-r-l u-padding-r-all u-layout-prose">
                                     <div class="u-text-p u-padding-r-bottom">
                                         <p class="u-color-50 u-text-r-xxs u-textWeight-600">nome account</p>
-                                        <p class="u-textSecondary u-text-r-xxs">10 Luglio 2016</p>
+                                        <p class="u-textSecondary u-text-r-xs">@nomeAccount</p>
                                     </div>
-                                    <h3 class="u-text-p u-textWeight-400 u-color-grey-80 u-margin-r-bottom u-padding-r-bottom">
-                                        Dolorem et cupiditate quasi aut ducimus voluptas officiis. Aut quisquam libero totam voluptatibus deserunt enim et voluptatem. Dolor tenetur qui perspiciatis est.
-                                    </h3>
-                                    <p>
-                                        <a title="visualizza su twitter" class="u-color-50 u-textClean u-text-xl" href="http://twitter.com">
-        <span class="Icon-twitter" aria-hidden="true"></span>
-        <span class="u-hiddenVisually">visualizza su twitter</span>
-      </a>
-                                    </p>
+                                    <p class="u-textSecondary u-text-r-xs">ultimo tweet dell'account in questione</p>
                                 </section>
                             </div>
-
-                        </div>
-
-                        <div class="Grid-cell u-sizeFull u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight u-padding-r-all">
-                            <div class="u-nbfc u-borderRadius-m u-color-grey-30 u-background-white">
-                                <section class="u-text-r-l u-padding-r-all u-layout-prose">
-                                    <div class="u-text-p u-padding-r-bottom">
-                                        <p class="u-color-50 u-text-r-xxs u-textWeight-600">nome account</p>
-                                        <p class="u-textSecondary u-text-r-xxs">10 Luglio 2016</p>
-                                    </div>
-                                    <h3 class="u-text-p u-textWeight-400 u-color-grey-80 u-margin-r-bottom u-padding-r-bottom">
-                                        Dignissimos recusandae et numquam sint qui saepe qui. Est blanditiis quibusdam voluptas alias enim. Quia sed odit voluptatem error iusto ex.
-                                    </h3>
-                                    <p>
-                                        <a title="visualizza su twitter" class="u-color-50 u-textClean u-text-xl" href="http://twitter.com">
-        <span class="Icon-twitter" aria-hidden="true"></span>
-        <span class="u-hiddenVisually">visualizza su twitter</span>
-      </a>
-                                    </p>
-                                </section>
-                            </div>
-
-                        </div>
-
-                        <div class="Grid-cell u-sizeFull u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight u-padding-r-all">
-                            <div class="u-nbfc u-borderRadius-m u-color-grey-30 u-background-white">
-                                <section class="u-text-r-l u-padding-r-all u-layout-prose">
-                                    <div class="u-text-p u-padding-r-bottom">
-                                        <p class="u-color-50 u-text-r-xxs u-textWeight-600">nome account</p>
-                                        <p class="u-textSecondary u-text-r-xxs">10 Luglio 2016</p>
-                                    </div>
-                                    <h3 class="u-text-p u-textWeight-400 u-color-grey-80 u-margin-r-bottom u-padding-r-bottom">
-                                        Ducimus itaque veniam minima aut. Quam itaque a. Corrupti doloribus aperiam sed voluptas quas expedita earum harum hic.
-                                    </h3>
-                                    <p>
-                                        <a title="visualizza su twitter" class="u-color-50 u-textClean u-text-xl" href="http://twitter.com">
-        <span class="Icon-twitter" aria-hidden="true"></span>
-        <span class="u-hiddenVisually">visualizza su twitter</span>
-      </a>
-                                    </p>
-                                </section>
-                            </div>
-
                         </div>
 
                     </div>
                 </div>
             </section>
-        </div>
-
-    </div>
-    {% endif %}
-
-
-    {% if site.links_leads %}
-    <!-- "leads" from _data/links_leads.yml -->
-    <div class="u-background-grey-20 u-background-grey-20 u-color-black u-text-xxl u-padding-r-bottom">
-        <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter">
-            <section class="u-padding-r-top u-padding-r-bottom">
-                <h2 class="u-text-h3 u-layout-centerLeft">{{ site.links_leads_title }}</h2>
-                <ul class="Grid Grid--withGutter">
-
-                    {% for item in site.data.links_leads %}
-                    <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
-                        <a class="Leads-link u-color-black" href="{{ item.url }}">{{ item.title }}</a>
-                    </li>
-                    {% endfor %}
-
-                </ul>
-            </section>
-
         </div>
     </div>
     {% endif %}
