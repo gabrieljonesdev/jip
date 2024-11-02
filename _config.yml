@@ -9,10 +9,10 @@ header_language_selector: false
 header_logo: https://gjd.altervista.org/wp-content/uploads/2024/09/cropped-Black_Beige_Circle_Y2K_Illustrative_Class_Logo-removebg-preview.png
 header_title: Gabriel Jones
 header_subtitle: Reparto 18F, URP, RS, RC, un mondo a parte!
-search: false
-search_full_content: false
+search: true
+search_full_content: true
 mega_menu: true    # if true, require _data/menu.yml
-mega_menu_accedi: false
+mega_menu_accedi: true
 
 # Social profiles
 social_block: true
