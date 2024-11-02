@@ -1,6 +1,6 @@
-- title: "AVA"
-  url: https://ava.gjdev.it
-- title: "gjdev"
-      url: https://gjdev.it
-- title: "Portale"
-      url: https://gjdev.it/
+# Esempio di links_buttons.yml
+links:
+  - title: "Link 1"
+    url: "https://example.com/link1"
+  - title: "Link 2"
+    url: "https://example.com/link2"
