@@ -1,9 +1,7 @@
----
 layout: default
 ---
 
 <div id="main">
-
     {{ content }}
 
     {% if site.links_buttons %}
@@ -47,7 +45,7 @@ layout: default
 
                     <div class="Grid Grid--withGutter">
 
-                    {% for post in site.posts limit: 6 %}
+                    {% for post in site.posts limit:6 %}
                       {% if forloop.first %}
                         <div class="Grid-cell u-nbfc u-md-size3of4 u-lg-size3of4">
 
@@ -90,8 +88,7 @@ layout: default
 
                     <p class="u-textCenter u-text-md-right u-text-lg-right u-padding-r-top">
                         <a href="{{ "/posts" | relative_url }}" class="u-color-50 u-textClean u-text-h4">
-                            tutti i contenuti <span class="Icon Icon-chevron-right"></span>
-                        </a>
+          tutti i contenuti <span class="Icon Icon-chevron-right"></span></a>
                     </p>
 
                 </section>
@@ -101,85 +98,6 @@ layout: default
     </div>
     {% endif %}
 
-    {% if site.section_lists %}
-    <!-- "landing section" from _data/section_lists.yml -->
-    <section class="u-layout-wide u-layout-withGutter u-layoutCenter u-padding-r-top">
-        <h1 class="u-text-h2">Aree Tematiche</h1>
-        <div class="Grid Grid--withGutter">
-
-            <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
-                <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Progetti</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">Tutti i progetti da Gabby</p>
-                    <ul class="Linklist Prose u-text-r-xs">
-                        <li><a href="/progetti/accessibilità">Progetto accessibilità 20 50</a></li>
-                        <li><a href="/progetti/ava">AVA project</a></li>
-                        <li><a href="/progetti/pgf/">Progetto politiche giovanili a Fontanafredda</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
-                <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Social</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">Tutti i social di Gabriel Jones</p>
-                    <ul class="Linklist Prose u-text-r-xs">
-                        <li><a href="https://instagram.com/onlygabbyme">Instagram</a></li>
-                        <li><a href="https://www.snapchat.com/add/gabriel_jones4">Snapchat</a></li>
-                        <li><a href="https://www.x.com/">x</a></li>
-                        <li><a href="https://www.github.com/gabrieljonesdev">github</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
-                <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
-                    <h2 class="u-text-h3 u-padding-r-top">Pagine</h2>
-                    <p class="Prose u-padding-r-top u-padding-r-bottom">Pagine di Gabriel!</p>
-                    <ul class="Linklist Prose u-text-r-xs">
-                        <li><a href="/post/">il blog</a></li>
-                        <li><a href="/curriculum/">Curriculum</a></li>
-                        <li><a href="/reparti/">Reparti</a></li>
-                        <li><a href="/onlygabbyme/">onlygabbyme</a></li>
-                        <li><a href="/documenti/">Documenti</a></li>
-                        <li><a href="/contatti/">contatti</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    {% endif %}
-
-    {% if site.twitter_list %}
-    <!-- twitter list (manual) -->
-    <div class="u-background-70 u-padding-r-top u-padding-r-bottom">
-        <div class="u-layout-centerContent u-background-70 u-padding-r-all">
-            <section class="u-layout-medium">
-                <div class="Grid">
-                    <div class="Grid-cell u-layout-centerLeft">
-                        <h2 class="u-text-r-l"><a class="u-color-white" href="">Da Gabriel</a></h2>
-                    </div>
-                </div>
-                <div class="u-text-r-xxl u-padding-r-top">
-                    <div class="Grid Grid--withGutter">
-
-                        <div class="Grid-cell u-sizeFull u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight u-padding-r-all">
-                            <div class="u-nbfc u-borderRadius-m u-color-grey-30 u-background-white">
-                                <section class="u-text-r-l u-padding-r-all u-layout-prose">
-                                    <div class="u-text-p u-padding-r-bottom">
-                                        <p class="u-color-50 u-text-r-xxs u-textWeight-600">nome account</p>
-                                        <p class="u-textSecondary u-text-r-xs">@nomeAccount</p>
-                                    </div>
-                                    <p class="u-textSecondary u-text-r-xs">ultimo tweet dell'account in questione</p>
-                                </section>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    {% endif %}
+    <!-- Other sections go here... -->
 
 </div>
