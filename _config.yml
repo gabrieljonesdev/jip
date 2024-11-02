@@ -8,10 +8,10 @@ author:            "Redazione"
 header_parent_title: GJDEV
 header_parent_url: "http://entepubblico-sovraordinato.it"
 header_language_selector: false
-header_logo: https://placehold.it/75x80?text=header_logo
+header_logo: https://gjd.altervista.org/wp-content/uploads/2024/09/cropped-Black_Beige_Circle_Y2K_Illustrative_Class_Logo-removebg-preview.png
 header_title: Gabriel Jones
 header_subtitle: Reparto 18F, URP, RS, RC, un mondo a parte!
-search: true
+search: false
 search_full_content: false
 mega_menu: true    # if true, require _data/menu.yml
 mega_menu_accedi: false
@@ -27,19 +27,10 @@ linkedin_username:
 github_username: abcuser
 
 # Footer data
-footer_logo: https://placehold.it/75x80?text=footer_logo
-footer_title: Nome ente
-footer_subtitle: sottotitolo
-recapiti1: Recapiti
-recapiti2: Via autem reiciendis maiores
-recapiti3: autem reiciendis maiores
-recapiti4: Tel. (+00) 00.0000.0000
-email: your-email@example.it
-pec: your-pec@example.it
-privacy_url: "privacy"
-note_legali_url: "note_legali"
-contatti_url: "contatti"
-
+footer_logo: https://gjd.altervista.org/wp-content/uploads/2024/09/cropped-Black_Beige_Circle_Y2K_Illustrative_Class_Logo-removebg-preview.png
+footer_title: gjdev
+footer_subtitle: Gabriel Jones Developer
+email: gabriel.jones@gjdev.it
 # Home sections
 links_buttons: true
 links_buttons_title:
