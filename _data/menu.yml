@@ -1,55 +1,34 @@
-- title: "A est rerum"
-  url: /collection-archive/
+- title: "Comune"
+  url: /comune/
   dropdown:
-  - title: "AUTEM REICIENDIS"
-    url: informazioni
-  - title: "BLANDIS SOLUTA EXERCITATIONEM"
-    url: contatti
-  - title: "VOLUPTATEM ELIGENDI LABORIOSAM"
-    url: posts
+  - title: "Comune"
+    url: /comune/
     dropdown:
-      - title: "Laboriosam porro dolor"
-        url: categories
-      - title: "Sed et velit"
-        url: tags
-      - title: Autem quae numquam
-        url: page-archive
-      - title: "Nulla quibusdam necessitatibus"
-        url: other-archive
+      - title: "comune di Fontanafredda"
+        url: https://www.comune.fontanafredda.pn.it/
+      - title: "Regione FVG"
+        url: https://www.regione.fvg.it/rafvg/cms/RAFVG/
+  - title: "Pagine"
+    url: /comune/
+    dropdown:
+      - title: "Proposte"
+        url: /comune/proposte/index.html
+      - title: "Comunicati"
+        url: /comune/comunicati/
 
-- title: "Voluptatibus esse corporis"
-  url: posts
+- title: "gjdev"
+  url: #
   dropdown:
-  - title: "VOLUPTATEM ELIGENDI LABORIOSAM"
-    url: posts
+  - title: "gjdev accessibility"
+    url: /gjd/dichiarazione-di-accessibilità/
 
-  - title: "AUTEM REICIENDIS MAIORES"
-    url: categories
-    dropdown:
-      - title: Autem quae numquam
-        url: categories
-      - title: "Sed et velit"
-        url: categories
-        dropdown:
-          - title: "Sub rem similique expedita"
-            url: posts
-          - title: "Sub autem reciciendis maiores"
-            url: posts
+  - title: "ava"
+    url: /progetti/ava/index.html
       - title: "Laboriosam porro dolor"
         url: categories
 
-  - title: "NULLA QUIBUSDAM NECESSITATIBUS"
-    url: tags
+  - title: "contenuti"
+    url: /tv/
 
-  - title: "VOLUPTATIBUS ESSE CORPORIS"
-    url: tags
-    dropdown:
-      - title: "Rem similique expedita"
-        url: posts
-      - title: "Autem reciciendis maiores"
-        url: posts
-      - title: Autem quae numquam
-        url: posts
-
-- title: "Reiciendis maiores"
-  url: categories
+  - title: "Onlygabbyme"
+    url: https://www.onlygabbyme.it
