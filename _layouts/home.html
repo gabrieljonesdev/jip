@@ -1,7 +1,9 @@
+---
 layout: default
 ---
 
 <div id="main">
+
     {{ content }}
 
     {% if site.links_buttons %}
@@ -44,11 +46,9 @@ layout: default
                     <h2 class="u-padding-r-bottom u-text-r-l">{{ site.posts_list_title }}</h2>
 
                     <div class="Grid Grid--withGutter">
-
-                    {% for post in site.posts limit:6 %}
+                    {% for post in site.posts limit: 6 %}
                       {% if forloop.first %}
                         <div class="Grid-cell u-nbfc u-md-size3of4 u-lg-size3of4">
-
                             <div class="Grid u-layout-centerContent">
                                 {% if post.thumbnail %}
                                 <div class="Grid-cell u-sizeFit">
@@ -83,12 +83,11 @@ layout: default
                       {% endif %}
                         </div>
                     {% endfor %}
-
                     </div>
 
                     <p class="u-textCenter u-text-md-right u-text-lg-right u-padding-r-top">
                         <a href="{{ "/posts" | relative_url }}" class="u-color-50 u-textClean u-text-h4">
-          tutti i contenuti <span class="Icon Icon-chevron-right"></span></a>
+                          tutti i contenuti <span class="Icon Icon-chevron-right"></a>
                     </p>
 
                 </section>
@@ -98,6 +97,86 @@ layout: default
     </div>
     {% endif %}
 
-    <!-- Other sections go here... -->
+    {% if site.section_lists %}
+    <!-- "landing section" from _data/section_lists.yml -->
+    <section class="u-layout-wide u-layout-withGutter u-layoutCenter u-padding-r-top">
+        <h1 class="u-text-h2">{{ site.section_lists_title }}</h1>
+        <div class="Grid Grid--withGutter">
+            {% for area in site.data.section_lists %}
+            <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-padding-r-all">
+                <div class="u-border-top-l u-color-70 u-text-r-l u-padding-r-bottom">
+                    <h2 class="u-text-h3 u-padding-r-top">{{ area.title }}</h2>
+                    <p class="Prose u-padding-r-top u-padding-r-bottom">
+                        {{ area.description }}
+                        <ul class="Linklist Prose u-text-r-xs">
+                            {% for link in area.links %}
+                            <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if site.twitter_list %}
+    <!-- twitter list (manual) -->
+    <div class="u-background-70 u-padding-r-top u-padding-r-bottom">
+        <div class="u-layout-centerContent u-background-70 u-padding-r-all">
+            <section class="u-layout-medium">
+                <div class="Grid">
+                    <div class="Grid-cell u-layout-centerLeft">
+                        <h2 class="u-text-r-l"><a class="u-color-white" href="">{{ site.twitter_list_title }}</a></h2>
+                    </div>
+                </div>
+                <div class="u-text-r-xxl u-padding-r-top">
+                    <div class="Grid Grid--withGutter">
+                        {% for tweet in site.data.twitter_list %}
+                        <div class="Grid-cell u-sizeFull u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight u-padding-r-all">
+                            <div class="u-nbfc u-borderRadius-m u-color-grey-30 u-background-white">
+                                <section class="u-text-r-l u-padding-r-all u-layout-prose">
+                                    <div class="u-text-p u-padding-r-bottom">
+                                        <p class="u-color-50 u-text-r-xxs u-textWeight-600">{{ tweet.account }}</p>
+                                        <p class="u-textSecondary u-text-r-xxs">{{ tweet.date }}</p>
+                                    </div>
+                                    <h3 class="u-text-p u-textWeight-400 u-color-grey-80 u-margin-r-bottom u-padding-r-bottom">
+                                        {{ tweet.content }}
+                                    </h3>
+                                    <p>
+                                        <a title="visualizza su twitter" class="u-color-50 u-textClean u-text-xl" href="{{ tweet.url }}">
+                                            <span class="Icon-twitter" aria-hidden="true"></span>
+                                            <span class="u-hiddenVisually">visualizza su twitter</span>
+                                        </a>
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if site.links_leads %}
+    <!-- "leads" from _data/links_leads.yml -->
+    <div class="u-background-grey-20 u-background-grey-20 u-color-black u-text-xxl u-padding-r-bottom">
+        <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter">
+            <section class="u-padding-r-top u-padding-r-bottom">
+                <h2 class="u-text-h3 u-layout-centerLeft">{{ site.links_leads_title }}</h2>
+                <ul class="Grid Grid--withGutter">
+                    {% for lead in site.data.links_leads %}
+                    <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
+                        <a class="Leads-link u-color-black" href="{{ lead.url }}">{{ lead.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
+    </div>
+    {% endif %}
 
 </div>
