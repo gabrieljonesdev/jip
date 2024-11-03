@@ -1,6 +1,7 @@
 title:             "Gabriel Jones"
 description:       "Gabriel Jones"
 baseurl:           "/"
+email: "gabriel.jones@mail.urp.gjdev.it"
 
 # Header data
 header_parent_title: GJDEV
@@ -46,6 +47,8 @@ locale: "it-IT"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
+  - searchyll
 
 defaults:
 # _pages
