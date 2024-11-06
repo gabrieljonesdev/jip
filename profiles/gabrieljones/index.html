@@ -67,6 +67,19 @@ personalizza_css: true
     <p>Telefono interno: 3591</p>
     
 </div>
+<h3 class="u-text-h3 u-color-70">Post di Gabriel Jones</h3>
+
+{% assign filtered_posts = site.posts | where: "author", "gabrieljones" %}
+{% if filtered_posts.size > 0 %}
+  <ul>
+  {% for post in filtered_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>Non ci sono post al momento.</p>
+{% endif %}
+
 
 <style>
     .profile-container {
