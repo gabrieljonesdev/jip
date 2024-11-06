@@ -1,37 +1,6 @@
 ---
 layout: home
----
-<section class="homelayout__first">
-  <div class="container">
-    <div class="row d-flex align-items-stretch ">
-      <article class="col-md-6 homelayout__first__sx d-flex  align-items-center px-3 pl-md-0 pr-md-3">
-        <div class="d-block homelayout__first__hero pr-md-5">
-          <h1>{{ t.home_hero }}</h1>
-          <a href="{{t.home_hero_buttonurl}}" class="btn btn-primary">{{t.home_hero_button}}</a>
-        </div>
-      </article>
-      <article class="col-md-6 homelayout__first__dx d-flex align-items-center px-3 pr-md-0 pl-md-3">
-        <div class="d-block pl-md-5">
-          <div class="homelayout__first__latnews">
-            <h2>{{t.home_news_title}}</h2>
-            <h1>{{news.title}}</h1>
-            <a href="{{news.url}}" title="{{news.title}}">{{t.software.read_more}} &rarr;</a>
-          </div>
-
-          <mailing-list-subscribe
-            text="{{ t.newsletter_text | escape }}"
-            args="{{ newsletterdata.args | jsonify | escape }}"
-            privacy="{{ site.data.footer_links.privacy[active_lang].url }}#mailing-list"
-            lang="{{ active_lang }}"
-          ></mailing-list-subscribe>
-        </div>
-      </article>
-    </div>
-  </div>
-
-
-
-    
+---  
 <!-- main point (manual) -->
 <div class="u-layout-wide u-layoutCenter u-text-r-l u-padding-r-top u-margin-r-bottom u-layout-r-withGutter">
     <section class="Grid">
@@ -60,6 +29,5 @@ layout: home
         <div class="Grid-cell u-sizeFull u-md-size1of2 u-lg-size1of2 u-text-r-s u-padding-r-all">
             <img src="img/bg-post.jpg" class="u-sizeFull" alt="bg-post" />
         </div>
-<a class="twitter-timeline" href="https://twitter.com/GabrielJonesDev?ref_src=twsrc%5Etfw">Tweets by GabrielJonesDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </section>
 </div>
