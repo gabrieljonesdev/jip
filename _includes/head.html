@@ -17,4 +17,66 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <meta name="generator" content="gjd-cms">
+  <style>
+    /* Layout della pagina dell'autore */
+.author-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px; /* Aumenta la distanza tra la foto e la lista dei post */
+  border-bottom: 3px solid #f0f0f0;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.author-photo {
+  border-radius: 50%;
+  width: 200px; /* Aumenta la dimensione dell'immagine del profilo */
+  height: 200px;
+  margin-right: 30px; /* Aumenta la distanza tra foto e testo */
+  object-fit: cover;
+}
+
+.author-details {
+  max-width: 600px; /* Aumenta la larghezza del testo */
+}
+
+.author-name {
+  font-size: 2.5rem; /* Aumenta la dimensione del nome dell'autore */
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.author-bio {
+  font-size: 1.3rem; /* Aumenta la dimensione della biografia */
+  color: #666;
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 2rem; /* Aumenta la dimensione del titolo dei post */
+  margin-top: 50px;
+  color: #333;
+}
+
+ul.author-posts {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.author-posts li {
+  margin-bottom: 20px; /* Aumenta la distanza tra i post */
+}
+
+ul.author-posts li a {
+  text-decoration: none;
+  font-size: 1.4rem; /* Aumenta la dimensione dei link ai post */
+  color: #007bff;
+}
+
+ul.author-posts li a:hover {
+  text-decoration: underline;
+}
+
+  </style>
 </head>
