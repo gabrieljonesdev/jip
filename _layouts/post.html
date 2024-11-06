@@ -18,9 +18,7 @@ layout: default
           {% if page.subtitle %}
           <h3 class="u-text-h3 u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.subtitle }}</h3>
           {% endif %}
-          {% if page.author %}
-          <h3 class="u-text-h3 u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.author }}</h3>
-          {% endif %}
+          <p class="author">Autore: <a href="/authors/{{ page.author | slugize }}">{{ page.author }}</a></p>
           {% if page.date %}
           <br>
           <span class="meta u-color-{% if page.titles_color %}{{ page.titles_color }}{% else %}black{% endif %}">{{ page.date | date: '%B %d, %Y' }}</span>
