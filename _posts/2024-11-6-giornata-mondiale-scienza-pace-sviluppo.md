@@ -5,6 +5,8 @@ date: 2024-11-10
 categories: [giornate-internazionali, scienza, pace]
 tags: [scienza, pace, sviluppo, giornata mondiale]
 A cura di: "segreteria-GJD"
+thumbnail: 'https://gjd.altervista.org/wp-content/uploads/2024/09/cropped-Black_Beige_Circle_Y2K_Illustrative_Class_Logo-removebg-preview.png'
+background: 'https://img.freepik.com/free-vector/global-technology-background-with-circuit-diagram_1017-26580.jpg'
 ---
 
 # Giornata Mondiale della Scienza per la Pace e lo Sviluppo
