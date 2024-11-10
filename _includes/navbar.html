@@ -1,177 +1,255 @@
-<div id="cookie-bar" class="CookieBar js-CookieBar u-background-95 u-padding-r-all" aria-hidden="true">
-  <p class="u-color-white u-text-r-xs u-lineHeight-m u-padding-r-bottom">Questo sito utilizza cookie tecnici, analytics e di terze parti.
-      <br>Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
-  </p>
-  <p>
-      <button class="Button Button--default u-text-r-xxs js-cookieBarAccept u-inlineBlock u-margin-r-all">Accetto</button>
-      <a href="{{ site.privacy_url }}" class="u-text-r-xs u-color-teal-50">Privacy policy</a>
-  </p>
-</div>
-<ul class="Skiplinks js-fr-bypasslinks u-hiddenPrint">
-  <li><a href="#main">Vai al Contenuto</a></li>
-  <li><a class="js-fr-offcanvas-open" href="#menu" aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">Vai alla navigazione del sito</a></li>
-</ul>
-<header class="Header Headroom--fixed js-Headroom u-hiddenPrint">
-  {% if site.header_parent_title or site.language_selector %}
-  <div class="Header-banner ">
-      <div class="Header-owner Headroom-hideme ">
-          {% if site.header_parent_title %}
-          <a href="{{ site.header_parent_url }}"><span>{{ site.header_parent_title }}</span></a>
-          {% endif %}
-          {% if site.language_selector %}
-          <div class="Header-languages ">
-              <a href="#languages" data-menu-trigger="languages" class="Header-language u-border-none u-zindex-max u-inlineBlock">
-                <span class="u-hiddenVisually">lingua attiva:</span>
-                <span class="">ITA</span>
-                <!-- <span class="u-hidden u-md-inlineBlock u-lg-inlineBlock">Italiano</span> -->
-                <span class="Icon Icon-expand u-padding-left-xs"></span>
-              </a>
-              <div id="languages" data-menu class="Dropdown-menu Header-language-other u-jsVisibilityHidden u-nojsDisplayNone">
-                <span class="Icon-drop-down Dropdown-arrow u-color-white"></span>
-                <ul>
-                    <li><a href="#1" class="u-padding-r-all"><span lang="en">English</span></a></li>
-                    <li><a href="#3" class="u-padding-r-all"><span lang="de">Deutsch</span></a></li>
-                    <li><a href="#8" class="u-padding-r-all"><span lang="es">Español</span></a></li>
-                    <li><a href="#4" class="u-padding-r-all"><span lang="fr">Français</span></a></li>
-                </ul>
-              </div>
-          </div>
-          {% endif %}
-      </div>
-  </div>
-  {% endif %}
-  <div class="Header-navbar ">
-      <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
-          {% if site.header_logo %}
-          <div class="Header-logo Grid-cell" aria-hidden="true">
-              <a href="/" tabindex="-1">
-                <img src="{{ site.header_logo | relative_url }}" alt="Logo">
-              </a>
-          </div>
-          {% endif %}
-          <div class="Header-title Grid-cell">
-              <h1 class="Header-titleLink">
-                  <a href="{{ site.url }}">{{ site.header_title }}
-                    {% if site.header_subtitle %}
-                    <br>
-                    <small>{{ site.header_subtitle}}</small>
-                    {% endif %}
-                  </a>
-              </h1>
-          </div>
-          {% if site.search %}
-          <div class="Header-searchTrigger Grid-cell">
-              <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search " title="attiva il form di ricerca" aria-label="attiva il form di ricerca" aria-hidden="false">
-              </button>
-              <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden " title="disattiva il form di ricerca" aria-label="disattiva il form di ricerca" aria-hidden="true">
-              </button>
-          </div>
-          {% endif %}
-          {% if site.social_block %}
-          <div class="Header-utils Grid-cell">
-              <div class="Header-social Headroom-hideme">
-                  <p>{% if site.social_username %}Segui {{ site.social_username }}{% else %}Seguici su{% endif %}</p>
-                  <ul class="Header-socialIcons">
-                      {% if site.medium_username %}
-                      <li><a href="https://www.medium.com/{{ site.facebook_username }}" title="Medium"><span class="Icon-medium"></span><span class="u-hiddenVisually">Facebook</span></a></li>
-                      {% endif %}
-                      {% if site.facebook_username %}
-                      <li><a href="https://www.facebook.com/{{ site.facebook_username }}" title="Facebook"><span class="Icon-facebook"></span><span class="u-hiddenVisually">Facebook</span></a></li>
-                      {% endif %}
-                      {% if site.twitter_username %}
-                      <li><a href="https://www.twitter.com/{{ site.twitter_username }}" title="Twitter"><span class="Icon-twitter"></span><span class="u-hiddenVisually">Twitter</span></a></li>
-                      {% endif %}
-                      {% if site.youtube_username %}
-                      <li><a href="https://youtube.com/{{ site.youtube_username }}" title="Youtube"><span class="Icon-youtube"></span><span class="u-hiddenVisually">Youtube</span></a></li>
-                      {% endif %}
-                      {% if site.linkedin_username %}
-                      <li><a href="https://it.linkedin.com/{{ site.linkedin_username }}" title="Linkedin"><span class="Icon-linkedin"></span><span class="u-hiddenVisually">Facebook</span></a></li>
-                      {% endif %}
-                      {% if site.github_username %}
-                      <li><a href="https://github.com/{{ site.github_username }}" title="GitHub"><span class="Icon-github"></span><span class="u-hiddenVisually">GitHub</span></a></li>
-                      {% endif %}
-                  </ul>
-              </div>
-              {% endif %}
-              {% if site.search %}
-          <div class="Header-search" id="header-search">
-              <form class="Form" action="https://www.google.com/cse" method="get">
-                  <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s" role="search">
-                      <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderRadius-s" required id="cerca" name="q" placeholder="cerca nel sito">
-                      <input type="hidden" name="cx" value="f1ced1f5e159143f5"> <!-- Il tuo ID del motore di ricerca -->
-                      <input type="hidden" name="ie" value="UTF-8">
-                      <button class="Grid-cell u-sizeFit Icon-search Icon--rotated u-color-grey-50 u-padding-all-s u-textWeight-700" title="Avvia la ricerca" aria-label="Avvia la ricerca">
-                          
-                      </button>
-                  </div>
-              </form>
-          </div>
-
-              {% endif %}
-          </div>
-          {% if site.mega_menu %}
-          <div class="Header-toggle Grid-cell">
-              <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">
-                <span class="Hamburger-toggle" role="presentation"></span>
-                <span class="Header-toggleText" role="presentation">Menu</span>
-              </a>
-          </div>
-          {% endif %}
-      </div>
-  </div>
-  <!-- Header-navbar -->
-  {% if site.mega_menu %}
-  <div class="Headroom-hideme u-textCenter u-hidden u-sm-hidden u-md-block u-lg-block">
-      <nav class="Megamenu Megamenu--default js-megamenu " data-rel=".Offcanvas .Treeview"></nav>
-  </div>
-  {% endif %}
-</header>
-{% if site.mega_menu %}
-<section class="Offcanvas Offcanvas--right Offcanvas--modal js-fr-offcanvas u-jsVisibilityHidden u-nojsDisplayNone u-hiddenPrint" id="menu">
-  <h2 class="u-hiddenVisually">Menu di navigazione</h2>
-  <div class="Offcanvas-content u-background-white">
-      <div class="Offcanvas-toggleContainer u-background-70 u-jsHidden">
-          <a class="Hamburger-toggleContainer u-block u-color-white u-padding-bottom-xxl u-padding-left-s u-padding-top-xxl js-fr-offcanvas-close" aria-controls="menu" aria-label="esci dalla navigazione" title="esci dalla navigazione" href="#">
-      <span class="Hamburger-toggle is-active" aria-hidden="true"></span>
-    </a>
-      </div>
-      <nav>
-          <ul class="Linklist Linklist--padded Treeview Treeview--default js-Treeview u-text-r-xs">
-              {% for item in site.data.menu %}
-                <li><a href="{{ item.url }}">{{ item.title }}</a>
-                  {% if item.dropdown %}
-                    <ul>
-                      {% for sub_item in item.dropdown %}
-                        <li><a href="{{ sub_item.url }}">{{ sub_item.title }}</a>
-                          {% if sub_item.dropdown %}
-                            <ul>
-                              {% for sub2_item in sub_item.dropdown %}
-                                <li><a href="{{ sub2_item.url }}">{{ sub2_item.title }}</a>
-                                  {% if sub2_item.dropdown %}
-                                    <ul>
-                                      {% for sub3_item in sub2_item.dropdown %}
-                                        <li><a href="{{ sub3_item.url }}">{{ sub3_item.title }}</a>
-                                        </li>
-                                      {% endfor %}
+            <header class="it-header-wrapper" data-bs-target="#header-nav-wrapper" style="">
+              <div class="it-header-slim-wrapper">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="it-header-slim-wrapper-content">
+                        <a class="d-lg-block navbar-brand" target="_blank" href="#" aria-label="Vai al portale {Nome della Regione} - link esterno - apertura nuova scheda" title="Vai al portale {Nome della Regione}">Nome della Regione</a>
+                        <div class="it-header-slim-right-zone" role="navigation">
+                          <div class="nav-item dropdown">
+                            <button type="button" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="languages" aria-haspopup="true">
+                              <span class="visually-hidden">Lingua attiva:</span>
+                              <span>ITA</span>
+                              <svg class="icon">
+                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                              </svg>
+                            </button>
+                            <div class="dropdown-menu">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="link-list-wrapper">
+                                    <ul class="link-list">
+                                      <li><a class="dropdown-item list-item" href="#"><span>ITA <span class="visually-hidden">selezionata</span></span></a></li>
+                                      <li><a class="dropdown-item list-item" href="#"><span>ENG</span></a></li>
                                     </ul>
-                                    {% endif %}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a class="btn btn-primary btn-icon btn-full" href="../servizi/accesso-servizio.html" data-element="personal-area-login">
+                            <span class="rounded-icon" aria-hidden="true">
+                              <svg class="icon icon-primary">
+                                <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
+                              </svg>
+                            </span>
+                            <span class="d-none d-lg-block">Accedi all'area personale</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="it-nav-wrapper">
+                <div class="it-header-center-wrapper">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="it-header-center-content-wrapper">
+                          <div class="it-brand-wrapper">
+                            <a href="homepage.html">
+                                <svg width="82" height="82" class="icon" aria-hidden="true">
+                                  <image xlink:href="../assets/images/logo-comune.svg"/>
+                                </svg>
+                                <div class="it-brand-text">
+                                  <div class="it-brand-title">Il mio Comune</div>
+                                  <div class="it-brand-tagline d-none d-md-block">Un comune da vivere </div>
+                                </div>
+                              </a>
+                          </div>
+                          <div class="it-right-zone">
+                            <div class="it-socials d-none d-lg-flex">
+                              <span>Seguici su</span>
+                              <ul>
+                                <li>
+                                  <a href="#" target="_blank">
+                                    <svg class="icon icon-sm icon-white align-top">
+                                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-twitter"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Twitter</span></a>
                                 </li>
-                              {% endfor %}
-                            </ul>
-                          {% endif %}
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  {% endif %}
-                </li>
-              {% endfor %}
-              {% if site.mega_menu_accedi %}
-              <li data-megamenu-class="u-hidden">
-                  <a class="Button u-border-none u-color-95 u-background-compl u-text-r-xxs" href="#">Accedi</a>
-              </li>
-              {% endif %}
-          </ul>
-      </nav>
-  </div>
-</section>
-{% endif %}
+                                <li>
+                                  <a href="#" target="_blank">
+                                    <svg class="icon icon-sm icon-white align-top">
+                                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-facebook"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Facebook</span></a>
+                                </li>
+                                <li>
+                                  <a href="#" target="_blank">
+                                    <svg class="icon icon-sm icon-white align-top">
+                                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-youtube"></use>
+                                    </svg>
+                                    <span class="visually-hidden">YouTube</span></a>
+                                </li>
+                                <li>
+                                  <a href="#" target="_blank">
+                                    <svg class="icon icon-sm icon-white align-top">
+                                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-telegram"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Telegram</span></a>
+                                </li>
+                                <li>
+                                  <a href="#" target="_blank">
+                                    <svg class="icon icon-sm icon-white align-top">
+                                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-whatsapp"></use>
+                                    </svg>
+                                    <span class="visually-hidden">Whatsapp</span></a>
+                                </li>
+                                <li>
+                                  <a href="#" target="_blank">
+                                    <svg class="icon icon-sm icon-white align-top">
+                                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-rss"></use>
+                                    </svg>
+                                    <span class="visually-hidden">RSS</span></a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="it-search-wrapper">
+                              <span class="d-none d-md-block">Cerca</span>
+                              <button class="search-link rounded-icon" type="button" data-bs-toggle="modal" data-bs-target="#search-modal" aria-label="Cerca nel sito">
+                                <svg class="icon">
+                                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-search"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="it-header-navbar-wrapper" id="header-nav-wrapper">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <!--start nav-->
+                        <div class="navbar navbar-expand-lg has-megamenu">
+                          <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-target="#nav4" data-bs-toggle="navbarcollapsible">
+                            <svg class="icon">
+                              <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
+                            </svg>
+                          </button>
+                          <div class="navbar-collapsable" id="nav4">
+                            <div class="overlay" style="display: none;"></div>
+                            <div class="close-div">
+                              <button class="btn close-menu" type="button">
+                                <span class="visually-hidden">Nascondi la navigazione</span>
+                                <svg class="icon">
+                                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            <div class="menu-wrapper">
+                              <a href="homepage.html" class="logo-hamburger">
+                                <svg class="icon" aria-hidden="true">
+                                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
+                                </svg>
+                                <div class="it-brand-text">
+                                  <div class="it-brand-title">Nome del Comune</div>
+                                </div>
+                              </a>
+                              <nav aria-label="Principale">
+                                <ul class="navbar-nav" data-element="main-navigation">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../sito/amministrazione.html" data-element="management">
+                                      <span>Amministrazione</span>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../sito/novita.html" data-element="news">
+                                      <span>Novità</span>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../sito/servizi.html" data-element="all-services">
+                                      <span>Servizi</span>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../sito/eventi.html" data-element="live">
+                                      <span>Vivere il Comune</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                              <nav aria-label="Secondaria">
+                                <ul class="navbar-nav navbar-secondary">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../sito/argomento.html">Iscrizioni</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../sito/argomento.html">Estate in città</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="../sito/argomento.html">Polizia locale</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="argomenti.html" data-element="all-topics">
+                                      <span>Tutti gli argomenti 
+                                        <svg class="icon icon-sm">
+                                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-right"></use>
+                                        </svg>
+                                      </span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                              <div class="it-socials">
+                                <span>Seguici su</span>
+                                <ul>
+                                  <li>
+                                    <a href="#" target="_blank">
+                                      <svg class="icon icon-sm icon-white align-top">
+                                        <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-twitter"></use>
+                                      </svg>
+                                      <span class="visually-hidden">Twitter</span></a>
+                                  </li>
+                                  <li>
+                                    <a href="#" target="_blank">
+                                      <svg class="icon icon-sm icon-white align-top">
+                                        <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-facebook"></use>
+                                      </svg>
+                                      <span class="visually-hidden">Facebook</span></a>
+                                  </li>
+                                  <li>
+                                    <a href="#" target="_blank">
+                                      <svg class="icon icon-sm icon-white align-top">
+                                        <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-youtube"></use>
+                                      </svg>
+                                      <span class="visually-hidden">YouTube</span></a>
+                                  </li>
+                                  <li>
+                                    <a href="#" target="_blank">
+                                      <svg class="icon icon-sm icon-white align-top">
+                                        <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-telegram"></use>
+                                      </svg>
+                                      <span class="visually-hidden">Telegram</span></a>
+                                  </li>
+                                  <li>
+                                    <a href="#" target="_blank">
+                                      <svg class="icon icon-sm icon-white align-top">
+                                        <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-whatsapp"></use>
+                                      </svg>
+                                      <span class="visually-hidden">Whatsapp</span></a>
+                                  </li>
+                                  <li>
+                                    <a href="#" target="_blank">
+                                      <svg class="icon icon-sm icon-white align-top">
+                                        <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-rss"></use>
+                                      </svg>
+                                      <span class="visually-hidden">RSS</span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
