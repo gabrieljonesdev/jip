@@ -1,6 +1,6 @@
 ---
 layout: post2
-title: 🌟 21 novembre: Un giorno per riflettere, celebrare e ringraziare 🌟
+title: 21 novembre: Un giorno per riflettere, celebrare e ringraziare
 categories: [cultura]
 tags: [21Novembre, cittadinanza, gratitudine, giornata degli infermieri, riflessione, impegno, solidarietà, salute]
 lang: it
@@ -9,7 +9,6 @@ persone : Gabriel Jones
 A cura di : Reparto 18F
 author: "18F"
 ---
-# 🌟 21 novembre: Un giorno per riflettere, celebrare e ringraziare 🌟
 
 Il 21 novembre è una data che porta con sé diversi significati e occasioni di riflessione, tanto a livello globale quanto locale. Oggi ci ricordiamo dell'importanza di alcuni temi fondamentali per la nostra società e la nostra crescita collettiva.
 
