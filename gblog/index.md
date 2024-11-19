@@ -17,13 +17,9 @@ title: "Tutti i Post"
   {% for post in site.posts %}
     <div class="post-item">
       <a href="{{ post.url }}">
-        <div class="post-header">
+        <div class="post-content">
           <h2>{{ post.title }}</h2>
-        </div>
-        <div class="post-body">
           <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-        </div>
-        <div class="post-footer">
           <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
         </div>
       </a>
@@ -105,11 +101,6 @@ title: "Tutti i Post"
 }
 
 </style>
-    <h3 class="u-text-h3 u-color-70">Contatti</h3>
-    <p>Email: <a href="mailto:gabriel.jones@18f.gjdev.it">gabriel.jones@18f.gjdev.it</a></p>
-    <p>Email: <a href="mailto:segreteria.g@18f.gjdev.it">segreteria.g@18f.gjdev.it</a></p>
-    <p>Email: <a href="mailto:gabriel.jones@mail.urp.gjdev.it">gabriel.jones@mail.urp.gjdev.it</a></p>
-    
 </div>
 
 </main>
