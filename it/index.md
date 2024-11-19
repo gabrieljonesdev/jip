@@ -16,40 +16,8 @@ order: 1
 
 <h1>Hey sono Gabriel e questo è il mio mondo!</h1>
 <div class="profile-container">
-    <div class="profile-header">
-        <img src="https://avatars.githubusercontent.com/u/184998944?s=200&amp;v=4" alt="Foto Profilo" class="profile-photo">
-        <h1>Gabriel Jones</h1>
-        <h2>Developer, founder, Content creator, youth politician and more</h2>
-    </div>
-
-    <h3 class="u-text-h3 u-color-70">Ruoli</h3>
-    <ul>
-        <li>RS: Membro del reparto stampa</li>
-        <li>URP : Membro dello URP</li>
-        <li>18F : presidente del reparto 18F </li>
-        <li>RC : Unico membro del reparto creativo</li>
-        <li>TP : Direttore del team politico</li>
-    </ul>
-
-    <h3 class="u-text-h3 u-color-70">Competenze</h3>
-    <ul>
-        <li>Sviluppo web</li>
-        <li>Comunicazione sui social</li>
-        <li>Comunicazione istituzionale </li>
-        <li>Animazione</li>
-        <li>Politiche giovanili</li>
-        <li>Servizi alla comunità</li>
-    </ul>
-
-    <h3 class="u-text-h3 u-color-70">Ruoli</h3>
-    <ul>
-        <li>RS: Membro del reparto stampa</li>
-        <li>URP : Membro dello URP</li>
-        <li>18F : presidente di </li>
-        <li>RC : Unico membro del reparto creativo</li>
-    </ul>
-    
     <h3 class="u-text-h3 u-color-70">Chi sono?</h3>
+    <!--- ciao --->
 <p>Mi chiamo <strong>Gabriel</strong>, ma molti di voi mi conoscono come <strong>onlygabbyme</strong>. Sono un grande appassionato di <strong>informatica</strong> e sogno di diventare un <strong>influencer</strong> un giorno. Questo obiettivo mi motiva ogni giorno a migliorare e a connettermi con voi.</p>
 
 <h2>La mia passione per l'informatica</h2>
