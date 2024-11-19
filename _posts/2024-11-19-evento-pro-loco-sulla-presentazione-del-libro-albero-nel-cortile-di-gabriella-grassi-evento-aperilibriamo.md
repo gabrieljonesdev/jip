@@ -2,7 +2,7 @@
 layout: post
 title: # 📚 **Aperilibriamo con il libro "L'albero nel cortile" di Gabriella Grassi** 🌳
 categories: [cultura]
-tags: [comunità, biblioteca, cultura]
+tags: [biblioteca, cultura]
 lang: it
 ref: new
 author: "Gabriel Jones"
