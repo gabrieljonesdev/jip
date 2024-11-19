@@ -27,6 +27,7 @@ title: "Tutti i Post"
   {% endfor %}
 </div>
 
+
 <style>
 /* Griglia */
 .post-grid {
