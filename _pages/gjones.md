@@ -5,6 +5,7 @@ personalizza_css: true
 lang: it
 reparto: "18F"
 author: "Alessandro S."
+permalink: /gabrieljones/
 ---
 
 <div class="profile-container">
