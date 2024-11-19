@@ -3,8 +3,9 @@ layout: post2
 title: "Norme account instagram Gabrieljones_official"
 description: "We are the future!"
 lang: it
-author: Interno
+author: 18F
 permalink: /gabrieljones/comune/ig/
+date: 19-11-2024
 ---
 # Regolamentazione per l'Account Politico su Instagram
 
