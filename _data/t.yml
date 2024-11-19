@@ -1,0 +1,67 @@
+---
+## Main icon
+icon: "https://comune.gjdev.it/assets/Comune_GJD__1_-removebg-preview.png"
+
+## Social Card [1200x630]
+social-card: https://comune.gjdev.it/assets/Comune_GJD__1_-removebg-preview.png
+
+## Site name
+name:
+  en: "GJD"
+  it: "GJD"
+
+## Site description
+description:
+  it: "Noi siamo il futuro"
+
+## Site author
+author:
+  it: "18f team"
+
+## Social
+social-links:
+  en:
+    twitter:
+      name: "twitter"
+      url: "https://twitter.com/gabrieljonesdev"
+    medium:
+      name: "medium"
+      url: "https://medium.com/gabrieljones/"
+  it:
+    twitter:
+      name: "twitter"
+      url: "https://twitter.com/gabrieljonesdev"
+    medium:
+      name: "medium"
+      url: "https://medium.com/gabrieljones/"
+
+## Labels
+italian-version:
+  en: "Italian version"
+  it: "Versione italiana"
+english-version:
+  en: "English version"
+  it: "Versione inglese"
+cookie-policy-info:
+  en: "This site uses technical, analytics and third-party cookies <br>By continuing to browse, you accept the use of cookies."
+  it: "Questo sito utilizza cookie tecnici, analytics e di terze parti.<br>Proseguendo nella navigazione accetti l’utilizzo dei cookie."
+cookie-policy-accept-btn:
+  en: "Ok"
+  it: "Accetto"
+footer-links:
+  en:
+    privacy-policy:
+      name: "Privacy policy"
+      url: "/en/privacy-policy"
+    cookie-policy:
+      name: "Cookie Policy"
+      url: "/en/cookie-policy"
+  it:
+    privacy-policy:
+      name: "Privacy policy"
+      url: "/it/privacy-policy"
+    cookie-policy:
+      name: "Cookie Policy"
+      url: "/it/cookie-policy"
+
+

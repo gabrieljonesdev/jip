@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<div class="centered-container">
+  <h1 class="category-title">Posts in the category: {{ page.title }}</h1>
+  <p>La cattegoria è a cura di: <a href="https://gjdev.it/persone/{{ page.author | slugify }}">{{ page.author }}</a></p>
+  <div class="category-posts">
+    {% assign category_posts = site.posts | where: "categories", page.category %}
+    {% for post in category_posts %}
+      <div class="post-card">
+        <a href="{{ post.url }}">
+          <h2 class="post-title">{{ post.title }}</h2>
+        </a>
+        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  /* Aseguramos que el contenedor esté centrado */
+  .centered-container {
+    width: 80%; /* Ancho del contenedor */
+    max-width: 900px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interior */
+  }
+
+  .category-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+
+  .category-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .post-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .post-title {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .post-title:hover {
+    color: #007BFF;
+  }
+
+  .post-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+  }
+
+  .post-excerpt {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+  }
+
+  /* Asegura un buen espaciado entre las cards */
+  .post-card + .post-card {
+    margin-top: 20px;
+  }
+</style>

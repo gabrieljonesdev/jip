@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="container my-4">
+  <div class="entry">
+    <p>Il post è a cura di: <a href="https://gjdev.it/uffici/{{ page.author | slugify }}">{{ page.author }}</a></p>
+    {{ content }}
+  </div>
+
+  <div class="date">
+    <p>Il post è a cura di: <a href="https://comune.gjdev.it/uffici/{{ page.author | slugify }}">Ufficio GJD {{ page.author }}</a></p>
+    Scritto il {{ page.date | date: "%d/%m/%Y" }}
+    
+  </div>
+
+  {% include disqus.html %}
+</article>
