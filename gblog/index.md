@@ -101,6 +101,3 @@ title: "Tutti i Post"
 }
 
 </style>
-</div>
-
-</main>
