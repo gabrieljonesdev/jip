@@ -1,10 +1,10 @@
 ---
 layout: home
-title: Gabriel Jones Developer
+title: Gabriel Jones blog
 description: Power Your Immaginatin!
 lang: it
-ref: homepage
-permalink: /
+ref: Gabriel Jones Blog
+permalink: /gblog/
 order: 1
 ---
 
