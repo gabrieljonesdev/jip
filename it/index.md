@@ -34,12 +34,10 @@ order: 1
 
     <h3 class="u-text-h3 u-color-70">Siti collegati</h3>
 
+<div data-events-calendar-app data-project-id="proj_7Shba8LAMBq5Ndp9tKW0L" ></div>
+<script type="text/javascript" src="//dist.eventscalendar.co/embed.js"></script>
 
 
-<div class="it-btn-container"><a class="btn btn-sm btn-secondary" href="https://ava.gjdev.it">AVA - gjdev</a></div>
-<div class="it-btn-container"><a class="btn btn-sm btn-secondary" href="https://gabrieljones.gjdev.it">Gabriel Jones gjdev.it</a></div>
-<div class="it-btn-container"><a class="btn btn-sm btn-secondary" href="https://gjdev.it">gjdev</a></div>
-<div class="it-btn-container"><a class="btn btn-sm btn-secondary" href="https://onlygabbyme.it">onlygabbyme</a></div>
 <style>
     .it-btn-container {
     display: inline-block;
