@@ -12,11 +12,7 @@ order: 1
 <!-- Codice HTML per il widget, visibile solo quando è attivo -->
 <div id="alertWidget" style="display: none; background-color: #f8d7da; color: #721c24; padding: 10px; border: 1px solid #f5c6cb; border-radius: 5px; position: fixed; top: 20px; right: 20px; width: 300px;">
 <!-- Contenitore per il widget -->
-<div id="widget-container" style="width: 100%; display: flex; justify-content: center;">
-  <script src="https://widget.meteo.fvg.it/code/305/007e56e7.js"></script>
-</div>
-</div>
-<main class="container my-4" markdown="1">
+<script type="text/javascript" src="https://www.protezionecivile.fvg.it/widgets/pcrfvgit_alert.js"></script><div class="pcrfvgit_alert_widget" data-istatcode="93022"></div><main class="container my-4" markdown="1">
 
 {% include posts.html %}
 
