@@ -16,8 +16,6 @@ order: 1
   <script src="https://widget.meteo.fvg.it/code/305/007e56e7.js"></script>
 </div>
 </div>
-<script src="https://widget.meteo.fvg.it/code/305/007e56e7.js"></script>
-
 <main class="container my-4" markdown="1">
 
 {% include posts.html %}
