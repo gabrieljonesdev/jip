@@ -11,7 +11,10 @@ order: 1
 {% include hero.html %}
 <!-- Codice HTML per il widget, visibile solo quando è attivo -->
 <div id="alertWidget" style="display: none; background-color: #f8d7da; color: #721c24; padding: 10px; border: 1px solid #f5c6cb; border-radius: 5px; position: fixed; top: 20px; right: 20px; width: 300px;">
-  <!-- Il contenuto del widget viene popolato dinamicamente -->
+<!-- Contenitore per il widget -->
+<div id="widget-container" style="width: 100%; display: flex; justify-content: center;">
+  <script src="https://widget.meteo.fvg.it/code/305/007e56e7.js"></script>
+</div>
 </div>
 <script src="https://widget.meteo.fvg.it/code/305/007e56e7.js"></script>
 
