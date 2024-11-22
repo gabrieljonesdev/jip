@@ -5,7 +5,14 @@
   {% include styles.html %}
   {%- if jekyll.environment == 'production' -%}
   {%- include analytics/google-analytics.html -%}
-
+  <style>
+    #widget-container {
+  width: 100%; /* Occupare tutta la larghezza del contenitore */
+  display: flex; /* Usare Flexbox per il centraggio */
+  justify-content: center; /* Centrato orizzontalmente */
+  align-items: center; /* Centrato verticalmente (se necessario) */
+}
+  </style>
   {%- endif -%}
 </head>
 <body>
