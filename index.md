@@ -13,6 +13,7 @@ order: 1
 <div id="alertWidget" style="display: none; background-color: #f8d7da; color: #721c24; padding: 10px; border: 1px solid #f5c6cb; border-radius: 5px; position: fixed; top: 20px; right: 20px; width: 300px;">
   <!-- Il contenuto del widget viene popolato dinamicamente -->
 </div>
+<script src="https://widget.meteo.fvg.it/code/305/007e56e7.js"></script>
 
 <main class="container my-4" markdown="1">
 
