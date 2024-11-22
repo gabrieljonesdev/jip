@@ -1,5 +1,5 @@
 ---
-layout: profile
+layout: utenti
 title: "Profilo di Gabriel Jones"
 name: "Gabriel Jones"
 bio: "Sviluppatore web appassionato di tecnologie open source e design responsivo."
