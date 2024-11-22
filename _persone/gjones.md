@@ -10,6 +10,8 @@ profile_picture: "https://avatars.githubusercontent.com/u/179027181?s=200&v=4"
 twitter: "https://twitter.com/giovannirossi"
 github: "https://github.com/giovannirossi"
 linkedin: "https://www.linkedin.com/in/giovannirossi"
+---
+
 offices:
   - name: "Ufficio di Milano"
     description: "Sede centrale di Milano, dove si svolgono le operazioni principali."
@@ -20,4 +22,3 @@ offices:
   - name: "Ufficio di Torino"
     description: "Ufficio secondario che si occupa delle vendite e del supporto clienti."
     link: "https://torino.example.com"
----
